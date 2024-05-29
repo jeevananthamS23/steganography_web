@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Steganography</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="scripts.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Video Steganography</h1>
+    </header>
+    <main>
+        <section>
+            <h2 style="font-size: large; color:#ff00e6;font-weight:bold">About Video Steganography</h2>
+            <p>Video steganography embeds information within video files. This can be achieved by altering the pixel values of video frames or the audio stream within the video.</p>
+        </section>
+        <section>
+            <button style="background-color:#007bff;" class="encode-btn" onclick="redirectToDragAndDrop()">ENCODE</button>
+            <button style="background-color:#007bff;" class="decode-btn" onclick="redirectToDragAndDrop()">DECODE</button>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Steganography Project. All rights reserved.</p>
+    </footer>
+    <script>
+        function redirectToDragAndDrop() {
+            window.location.href = 'drag.html';
+        }
+    </script>
+</body>
+</html>

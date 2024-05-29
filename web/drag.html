@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    <style>
+        .drag-container {
+            text-align: center;
+            max-width: 250px; /* Adjust the maximum width as needed */
+            margin: 0 auto; 
+        }
+        
+        .drag-img {
+        
+            display: inline-block;
+            width: 200px; /* Adjust the width of the image container */
+            height: 200px; /* Adjust the height of the image container */
+            margin: 20px auto;
+            padding: 10px;
+            text-align: center;
+        }
+        
+        .drag-item:hover {
+            background-color: #00FF00; /* Green color on hover */
+        }
+        .custom-file-upload {
+            width: 100px;
+            height: 15px;
+            background: blue;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            cursor: pointer;
+            display: inline-block;
+            text-align: center;
+            line-height: 15px;
+            margin-top: 20px;
+        }
+        
+        .custom-file-upload input[type="file"] {
+            display: none;
+        }
+        
+        
+       
+    </style>
+     <link rel="stylesheet" href="style.css">
+   
+</head>
+<body>
+    <header>
+        <h1>INSERT THE FILE </h1>
+    </header>
+    <main>
+        <h1>FILE INSERTION</h1>
+        <div class="drag-container">
+            <div class="drag-img">
+                <img src="images.png">
+                <center>
+                    <label for="file-upload" class="custom-file-upload">
+                        <input id="file-upload" type="file">Insert
+                    </label>
+                </center>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Drag and Drop Project. All rights reserved.</p>
+    </footer>
+    
+    <!-- <script>
+        function allowDrop(event) {
+            event.preventDefault();
+        }
+
+        function drag(event) {
+            event.dataTransfer.setData("text", event.target.id);
+        }
+
+        function drop(event) {
+            event.preventDefault();
+            var data = event.dataTransfer.getData("text");
+            var draggedItem = document.getElementById(data);
+            event.target.appendChild(draggedItem);
+        }
+    </script> -->
+</body>
+</html>

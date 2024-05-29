@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encode/Decode Steganography</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Encode/Decode Steganography</h1>
+    </header>
+    <main>
+        <section id="drag-drop-section">
+            <h2>Drag and Drop your files here</h2>
+            <div id="drop-zone" ondrop="handleDrop(event)" ondragover="allowDrop(event)">
+                <p>Drop your file here to encode or decode</p>
+            </div>
+        </section>
+        <section id="options-section">
+            <h2>Options</h2>
+            <button onclick="toggleEncode()">Encode</button>
+            <button onclick="toggleDecode()">Decode</button>
+        </section>
+        <section id="encode-section" style="display: none;">
+            <h2>Encoding Options</h2>
+            <!-- Include encoding options here if needed -->
+            <button onclick="encode()">Start Encoding</button>
+        </section>
+        <section id="decode-section" style="display: none;">
+            <h2>Decoding Options</h2>
+            <!-- Include decoding options here if needed -->
+            <button onclick="decode()">Start Decoding</button>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Steganography Project. All rights reserved.</p>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>
